@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6fd06c5d83e838c846b75f8c740fc0b0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6fd06c5d83e838c846b75f8c740fc0b0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6fd06c5d83e838c846b75f8c740fc0b0 = L.map(
+                "map_6fd06c5d83e838c846b75f8c740fc0b0",
+                {
+                    center: [40.68636520957498, -73.98946130435196],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b8ac3059926ecbd6a21f1c8062b9ff2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5b8ac3059926ecbd6a21f1c8062b9ff2.addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            var circle_marker_7661daf4b68ca66d3ea63d5bf266d653 = L.circleMarker(
+                [40.68566007, -73.99100458],
+                {"bubblingMouseEvents": true, "color": "#ff7100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7100", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_7661daf4b68ca66d3ea63d5bf266d653.bindTooltip(
+                `<div>
+                     black-forest-brooklyn-brooklyn-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_151b36ddf57c6740d501ea9bbb413c84 = L.circleMarker(
+                [40.68495, -74.00289],
+                {"bubblingMouseEvents": true, "color": "#ffb200", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb200", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_151b36ddf57c6740d501ea9bbb413c84.bindTooltip(
+                `<div>
+                     mazzat-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d742a61c21daedd7947d40d7cd788ed8 = L.circleMarker(
+                [40.68556, -74.00276],
+                {"bubblingMouseEvents": true, "color": "#79e3a1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79e3a1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_d742a61c21daedd7947d40d7cd788ed8.bindTooltip(
+                `<div>
+                     mex-carrolls-diner-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aaa779d9f4a0d19b1b6d12cf3c052253 = L.circleMarker(
+                [40.685565, -74.002147],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_aaa779d9f4a0d19b1b6d12cf3c052253.bindTooltip(
+                `<div>
+                     alma-restaurant-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8613bf5fe9dc69ff76152a5773a8b08 = L.circleMarker(
+                [40.68396015, -74.00180035],
+                {"bubblingMouseEvents": true, "color": "#ff8900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8900", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_b8613bf5fe9dc69ff76152a5773a8b08.bindTooltip(
+                `<div>
+                     petite-crevette-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1e8e63213a27dccc0a2a29e02b3af17 = L.circleMarker(
+                [40.6812946, -74.00434248],
+                {"bubblingMouseEvents": true, "color": "#ff3200", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3200", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_c1e8e63213a27dccc0a2a29e02b3af17.bindTooltip(
+                `<div>
+                     jalopy-tavern-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ece2a729a6ff718f012c22eb797d9919 = L.circleMarker(
+                [40.682315, -74.000587],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_ece2a729a6ff718f012c22eb797d9919.bindTooltip(
+                `<div>
+                     koto-sushi-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_352526449b910bb455a7de9be7824e79 = L.circleMarker(
+                [40.6816699, -74.000845],
+                {"bubblingMouseEvents": true, "color": "#ffbc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbc00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_352526449b910bb455a7de9be7824e79.bindTooltip(
+                `<div>
+                     henrys-local-new-york
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c83fb11878fdd48857a19d005e4afcda = L.circleMarker(
+                [40.6835182, -73.99957716],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_c83fb11878fdd48857a19d005e4afcda.bindTooltip(
+                `<div>
+                     gardens-gourmet-deli-and-grill-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c242708d4700e96a449e7f90e5323a4d = L.circleMarker(
+                [40.68184075, -74.0003327],
+                {"bubblingMouseEvents": true, "color": "#33f345", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33f345", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_c242708d4700e96a449e7f90e5323a4d.bindTooltip(
+                `<div>
+                     lucali-brooklyn-3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec6a8323117dc00b900506aca10ef392 = L.circleMarker(
+                [40.67894444, -74.00536913],
+                {"bubblingMouseEvents": true, "color": "#ffb000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_ec6a8323117dc00b900506aca10ef392.bindTooltip(
+                `<div>
+                     defontes-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5be3b3aa2c0792e5165a4a4959c7b3d = L.circleMarker(
+                [40.67976871, -74.0103687],
+                {"bubblingMouseEvents": true, "color": "#11fb17", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#11fb17", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_a5be3b3aa2c0792e5165a4a4959c7b3d.bindTooltip(
+                `<div>
+                     red-hook-lobster-pound-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f8e648e11ffc176af612d32da376a10 = L.circleMarker(
+                [40.6848829, -73.9949515],
+                {"bubblingMouseEvents": true, "color": "#ffca00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffca00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_5f8e648e11ffc176af612d32da376a10.bindTooltip(
+                `<div>
+                     osaka-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84f3b0cbed4087d4bcfc5f0e700c299e = L.circleMarker(
+                [40.685223, -73.994696],
+                {"bubblingMouseEvents": true, "color": "#ff5300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5300", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_84f3b0cbed4087d4bcfc5f0e700c299e.bindTooltip(
+                `<div>
+                     buddys-burrito-and-taco-bar-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95a867f1f7038a6002ae9cdf556aa1d6 = L.circleMarker(
+                [40.68528, -73.99466],
+                {"bubblingMouseEvents": true, "color": "#ffbd00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbd00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_95a867f1f7038a6002ae9cdf556aa1d6.bindTooltip(
+                `<div>
+                     kitchen-at-cobble-hill-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b6c55fa0d34b4a8d9489d02fa6cb06f = L.circleMarker(
+                [40.68582, -73.9944],
+                {"bubblingMouseEvents": true, "color": "#ffa400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_7b6c55fa0d34b4a8d9489d02fa6cb06f.bindTooltip(
+                `<div>
+                     moo-burger-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6deaaac19ced2e43b62e235179525eae = L.circleMarker(
+                [40.68460464, -73.9921875],
+                {"bubblingMouseEvents": true, "color": "#ff5800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5800", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_6deaaac19ced2e43b62e235179525eae.bindTooltip(
+                `<div>
+                     clover-club-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d85051ce16a2d79e0064dfbf1094443 = L.circleMarker(
+                [40.68656, -73.99404],
+                {"bubblingMouseEvents": true, "color": "#ff7400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_2d85051ce16a2d79e0064dfbf1094443.bindTooltip(
+                `<div>
+                     lobo-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea34d4b8d30049a327319e5d04d01853 = L.circleMarker(
+                [40.68669, -73.9941],
+                {"bubblingMouseEvents": true, "color": "#ff6b00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6b00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_ea34d4b8d30049a327319e5d04d01853.bindTooltip(
+                `<div>
+                     layla-jones-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ac266b56b02a0f282945665065c1cd0 = L.circleMarker(
+                [40.682652, -73.9935],
+                {"bubblingMouseEvents": true, "color": "#ffa400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_2ac266b56b02a0f282945665065c1cd0.bindTooltip(
+                `<div>
+                     cubana-cafe-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfdf222e30822f5d77deaecf607fd4ee = L.circleMarker(
+                [40.6826515, -73.9933624],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_bfdf222e30822f5d77deaecf607fd4ee.bindTooltip(
+                `<div>
+                     union-grounds-new-york
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ae0238f64ca50c2e75dacaf3eac35ce = L.circleMarker(
+                [40.6844032, -73.9918238],
+                {"bubblingMouseEvents": true, "color": "#ff7f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_2ae0238f64ca50c2e75dacaf3eac35ce.bindTooltip(
+                `<div>
+                     el-nuevo-portal-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ae3d090024d99f85df6903018405840 = L.circleMarker(
+                [40.686672, -73.993544],
+                {"bubblingMouseEvents": true, "color": "#ffcb00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcb00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_0ae3d090024d99f85df6903018405840.bindTooltip(
+                `<div>
+                     joya-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32d45ce76ea3245d82b0cf27cdafa672 = L.circleMarker(
+                [40.68252868, -73.99319145],
+                {"bubblingMouseEvents": true, "color": "#ff3200", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3200", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_32d45ce76ea3245d82b0cf27cdafa672.bindTooltip(
+                `<div>
+                     the-wing-bar-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_859b40d509f88b4ff113c2592e1f08fb = L.circleMarker(
+                [40.6824379, -73.99313354],
+                {"bubblingMouseEvents": true, "color": "#ffb000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_859b40d509f88b4ff113c2592e1f08fb.bindTooltip(
+                `<div>
+                     white-maize-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d753ff6eafd51586ac7d4a38e4069e3 = L.circleMarker(
+                [40.68223376, -73.99580465],
+                {"bubblingMouseEvents": true, "color": "#ffdf00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdf00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_1d753ff6eafd51586ac7d4a38e4069e3.bindTooltip(
+                `<div>
+                     marco-polo-ristorante-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fdb17ea1dbb608905b5c82f153ff052 = L.circleMarker(
+                [40.686972, -73.99352],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_0fdb17ea1dbb608905b5c82f153ff052.bindTooltip(
+                `<div>
+                     tropic-juice-bar-and-grill-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc30537a3a5d6938879075dcb3d20fb2 = L.circleMarker(
+                [40.6857959, -73.984248],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_dc30537a3a5d6938879075dcb3d20fb2.bindTooltip(
+                `<div>
+                     revolving-dansk-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4d9d4af3087c5ab6f89709a040e04d6 = L.circleMarker(
+                [40.68562, -73.9819],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_e4d9d4af3087c5ab6f89709a040e04d6.bindTooltip(
+                `<div>
+                     hollow-nickel-brooklyn-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53306ada0dea903db30667f0d96ea8f3 = L.circleMarker(
+                [40.682831, -73.982086],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_53306ada0dea903db30667f0d96ea8f3.bindTooltip(
+                `<div>
+                     lanos-coffee-shop-and-restaurant-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a026e2b1e3040eb91d9292b1aa3460a3 = L.circleMarker(
+                [40.68562, -73.98587],
+                {"bubblingMouseEvents": true, "color": "#ff7800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7800", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_a026e2b1e3040eb91d9292b1aa3460a3.bindTooltip(
+                `<div>
+                     rucola-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c5fbabeb7c3bdf59a2833b214757dc3 = L.circleMarker(
+                [40.68695016, -73.98429164],
+                {"bubblingMouseEvents": true, "color": "#ffd000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_5c5fbabeb7c3bdf59a2833b214757dc3.bindTooltip(
+                `<div>
+                     bacchus-bistro-and-wine-bar-brooklyn-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe5b122140b8ff352e518ec3e673d670 = L.circleMarker(
+                [40.68697698, -73.98439405],
+                {"bubblingMouseEvents": true, "color": "#ffa400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_fe5b122140b8ff352e518ec3e673d670.bindTooltip(
+                `<div>
+                     bedouin-tent-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90919c3073656be9346c3fcfe891c03e = L.circleMarker(
+                [40.68395637, -73.97887027],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_90919c3073656be9346c3fcfe891c03e.bindTooltip(
+                `<div>
+                     halal-paradise-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e891d94f82f2b529a0d9dc313a9eb1b = L.circleMarker(
+                [40.6857872, -73.97373199],
+                {"bubblingMouseEvents": true, "color": "#ffaf00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffaf00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_9e891d94f82f2b529a0d9dc313a9eb1b.bindTooltip(
+                `<div>
+                     hua-long-chinese-restaurant-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08196f7be8a8864ad5b7e69f33298f48 = L.circleMarker(
+                [40.6860872, -73.9735729],
+                {"bubblingMouseEvents": true, "color": "#ffa400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_08196f7be8a8864ad5b7e69f33298f48.bindTooltip(
+                `<div>
+                     hungry-ghost-brooklyn-3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ca9680d408e17083a1beb6386d351d0 = L.circleMarker(
+                [40.68598634, -73.9740808],
+                {"bubblingMouseEvents": true, "color": "#ffd600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd600", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_4ca9680d408e17083a1beb6386d351d0.bindTooltip(
+                `<div>
+                     not-rays-pizza-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34bd1133e6bf7888d66f601b0400a9c4 = L.circleMarker(
+                [40.68596, -73.97423],
+                {"bubblingMouseEvents": true, "color": "#19fd00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#19fd00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_34bd1133e6bf7888d66f601b0400a9c4.bindTooltip(
+                `<div>
+                     yang-no-1-asian-restaurant-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8307f607465dc83a15a17dad9a31b581 = L.circleMarker(
+                [40.686448, -73.974163],
+                {"bubblingMouseEvents": true, "color": "#ffbd00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbd00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_8307f607465dc83a15a17dad9a31b581.bindTooltip(
+                `<div>
+                     habana-outpost-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e6beed440570aacf7495837655f5108 = L.circleMarker(
+                [40.68731887, -73.9724778],
+                {"bubblingMouseEvents": true, "color": "#ffa400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_0e6beed440570aacf7495837655f5108.bindTooltip(
+                `<div>
+                     black-iris-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc802e6c2c6e167dbf6157569fdbfa57 = L.circleMarker(
+                [40.68662, -73.97485],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_bc802e6c2c6e167dbf6157569fdbfa57.bindTooltip(
+                `<div>
+                     brooklyn-moon-cafe-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b865950ff114072bbc8744259ecb4266 = L.circleMarker(
+                [40.683807, -73.967674],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_b865950ff114072bbc8744259ecb4266.bindTooltip(
+                `<div>
+                     country-house-diner-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_429fde372f91c70233da992652b4b8e3 = L.circleMarker(
+                [40.6867553, -73.9750998],
+                {"bubblingMouseEvents": true, "color": "#ff5800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5800", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_429fde372f91c70233da992652b4b8e3.bindTooltip(
+                `<div>
+                     black-forest-brooklyn-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a1411087b7626ffb098b2db93281a7f = L.circleMarker(
+                [40.6877844, -73.9706046],
+                {"bubblingMouseEvents": true, "color": "#ff6600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6600", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_9a1411087b7626ffb098b2db93281a7f.bindTooltip(
+                `<div>
+                     olea-brooklyn-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_050829d2f0729e4ce9b16126845bdc27 = L.circleMarker(
+                [40.68368013, -73.9674544],
+                {"bubblingMouseEvents": true, "color": "#ffb000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_050829d2f0729e4ce9b16126845bdc27.bindTooltip(
+                `<div>
+                     mac-shack-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67ae7f6ae474d4b40035085feaef32df = L.circleMarker(
+                [40.68658447, -73.97569275],
+                {"bubblingMouseEvents": true, "color": "#ffe300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe300", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_67ae7f6ae474d4b40035085feaef32df.bindTooltip(
+                `<div>
+                     deniz-turkish-mediterranean-cuisine-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6111af83a98c743e574d234f716d2e8a = L.circleMarker(
+                [40.68351998, -73.96690242],
+                {"bubblingMouseEvents": true, "color": "#ffad00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffad00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_6111af83a98c743e574d234f716d2e8a.bindTooltip(
+                `<div>
+                     belli-osteria-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_81a62f05ed089b6204acf2031a4a7b19 = L.circleMarker(
+                [40.687362, -73.975395],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_81a62f05ed089b6204acf2031a4a7b19.bindTooltip(
+                `<div>
+                     la-bagel-delight-brooklyn-7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dce6f4639c33a71186d5937de5b8bedf = L.circleMarker(
+                [40.6847998, -73.977122],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_dce6f4639c33a71186d5937de5b8bedf.bindTooltip(
+                `<div>
+                     mcdonalds-brooklyn-12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f55e364d86d3e368ba2520eb45867144 = L.circleMarker(
+                [40.68114, -73.97495],
+                {"bubblingMouseEvents": true, "color": "#ffef00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffef00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_f55e364d86d3e368ba2520eb45867144.bindTooltip(
+                `<div>
+                     pokébowl-station-brooklyn-6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa42913dbcf1e07885b1c1a29106e055 = L.circleMarker(
+                [40.686412, -73.966629],
+                {"bubblingMouseEvents": true, "color": "#02fe03", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#02fe03", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_aa42913dbcf1e07885b1c1a29106e055.bindTooltip(
+                `<div>
+                     aita-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6a3e86823f17fbd165cdd5e9b20b8a4 = L.circleMarker(
+                [40.69458197, -73.99450868],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_e6a3e86823f17fbd165cdd5e9b20b8a4.bindTooltip(
+                `<div>
+                     juice-press-brooklyn-heights
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d377b2e6bfabf5d4f2250f6b3066e8ff = L.circleMarker(
+                [40.694818, -73.99491],
+                {"bubblingMouseEvents": true, "color": "#ffd000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_d377b2e6bfabf5d4f2250f6b3066e8ff.bindTooltip(
+                `<div>
+                     lassen-and-hennigs-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c238983865dae483b2bc62544015002 = L.circleMarker(
+                [40.6949, -73.995183],
+                {"bubblingMouseEvents": true, "color": "#add8e6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#add8e6", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_0c238983865dae483b2bc62544015002.bindTooltip(
+                `<div>
+                     montague-street-bagels-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0eaf61ea7cfbc937f9fbe1fb53c223b = L.circleMarker(
+                [40.6948586, -73.9937134],
+                {"bubblingMouseEvents": true, "color": "#ff4b00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4b00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_a0eaf61ea7cfbc937f9fbe1fb53c223b.bindTooltip(
+                `<div>
+                     custom-house-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21a6d44793d9959dca713e22abe4c83c = L.circleMarker(
+                [40.69533, -73.99544],
+                {"bubblingMouseEvents": true, "color": "#ffb500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb500", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_21a6d44793d9959dca713e22abe4c83c.bindTooltip(
+                `<div>
+                     lantern-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bdb230396659adfe10ea33bdc470b20e = L.circleMarker(
+                [40.69434931, -73.99183062],
+                {"bubblingMouseEvents": true, "color": "#33f345", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33f345", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_bdb230396659adfe10ea33bdc470b20e.bindTooltip(
+                `<div>
+                     chipotle-mexican-grill-brooklyn-5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23b3f96da6166f12ca536be6da6f6393 = L.circleMarker(
+                [40.691017, -73.995918],
+                {"bubblingMouseEvents": true, "color": "#ffb000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_23b3f96da6166f12ca536be6da6f6393.bindTooltip(
+                `<div>
+                     caffe-buon-gusto-brooklyn-4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95a37f472784a4cba66059e75deffeae = L.circleMarker(
+                [40.69249497, -73.99139982],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_95a37f472784a4cba66059e75deffeae.bindTooltip(
+                `<div>
+                     honeygrow-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2a43b9caa17f739c4210045292cd0b2 = L.circleMarker(
+                [40.69367189, -73.99847595],
+                {"bubblingMouseEvents": true, "color": "#ff7f00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_f2a43b9caa17f739c4210045292cd0b2.bindTooltip(
+                `<div>
+                     river-deli-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_067f931279324f0dfba8e3f6f0314dc4 = L.circleMarker(
+                [40.69073058, -73.99551244],
+                {"bubblingMouseEvents": true, "color": "#ff8e00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8e00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_067f931279324f0dfba8e3f6f0314dc4.bindTooltip(
+                `<div>
+                     chez-moi-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b2d82ec0afd6a604a08a86d1d487063 = L.circleMarker(
+                [40.69029752, -73.99628948],
+                {"bubblingMouseEvents": true, "color": "#8b0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8b0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_3b2d82ec0afd6a604a08a86d1d487063.bindTooltip(
+                `<div>
+                     henry-public-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1866232fca485dd222f17f9ed9f96745 = L.circleMarker(
+                [40.6901903, -73.99357564],
+                {"bubblingMouseEvents": true, "color": "#8b0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8b0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_1866232fca485dd222f17f9ed9f96745.bindTooltip(
+                `<div>
+                     mocha-hookah-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41284d9a9ed367e95934c4e84186c27b = L.circleMarker(
+                [40.69233704, -73.98447418],
+                {"bubblingMouseEvents": true, "color": "#79e3a1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79e3a1", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_41284d9a9ed367e95934c4e84186c27b.bindTooltip(
+                `<div>
+                     brooklyn-deli-brooklyn-5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86c59d7439cadfb06793624313f4ab32 = L.circleMarker(
+                [40.69151565, -73.9846554],
+                {"bubblingMouseEvents": true, "color": "#2bf539", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2bf539", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_86c59d7439cadfb06793624313f4ab32.bindTooltip(
+                `<div>
+                     kimoto-rooftop-brooklyn-5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08b9c3b58706a55729fcdc17bb9b0a27 = L.circleMarker(
+                [40.67924398, -74.01100745],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_08b9c3b58706a55729fcdc17bb9b0a27.bindTooltip(
+                `<div>
+                     brooklyn-ice-house-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fc41e436289d420f77428dcc68186dc = L.circleMarker(
+                [40.683438, -73.995711],
+                {"bubblingMouseEvents": true, "color": "#ffa400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa400", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_3fc41e436289d420f77428dcc68186dc.bindTooltip(
+                `<div>
+                     gersi-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f8fd5461e026e4b2264252685d9ca2d = L.circleMarker(
+                [40.68606513, -73.99388911],
+                {"bubblingMouseEvents": true, "color": "#11fb17", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#11fb17", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_0f8fd5461e026e4b2264252685d9ca2d.bindTooltip(
+                `<div>
+                     june-brooklyn-3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_207367ae8f68034dcaecf765ecc70165 = L.circleMarker(
+                [40.6833674, -73.9997959],
+                {"bubblingMouseEvents": true, "color": "#ffb700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb700", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_207367ae8f68034dcaecf765ecc70165.bindTooltip(
+                `<div>
+                     bar-bruno-brooklyn-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d093dd7f7af4134bb7adf33a38b58a2f = L.circleMarker(
+                [40.68781, -73.99576],
+                {"bubblingMouseEvents": true, "color": "#ff5900", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5900", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_d093dd7f7af4134bb7adf33a38b58a2f.bindTooltip(
+                `<div>
+                     la-vara-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ada448260ae1119635c9478f34685f26 = L.circleMarker(
+                [40.6870474589747, -73.9938177876969],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_ada448260ae1119635c9478f34685f26.bindTooltip(
+                `<div>
+                     darna-falafel-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b263e74b8abce71d183db544fa4ad44 = L.circleMarker(
+                [40.68801, -73.99334],
+                {"bubblingMouseEvents": true, "color": "#ffe300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe300", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_7b263e74b8abce71d183db544fa4ad44.bindTooltip(
+                `<div>
+                     cafe-chili-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b915ee56121c53c21c3eef6aaa6302e1 = L.circleMarker(
+                [40.690124, -73.996238],
+                {"bubblingMouseEvents": true, "color": "#ffda00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffda00", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_6fd06c5d83e838c846b75f8c740fc0b0);
+        
+    
+            circle_marker_b915ee56121c53c21c3eef6aaa6302e1.bindTooltip(
+                `<div>
+                     hibino-brooklyn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
