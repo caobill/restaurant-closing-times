@@ -6,7 +6,8 @@ adjacency to affordable housing was one big factor that influenced whether a nei
 to bounce back to being a late night spot. The mechanism for this being availability of workers to
 work at these establishments late at night.
 
-However, there was not really any quantitative data about this trend. I made this tool to help 
+However, there was not really any quantitative data about this trend. I wanted to be able to explore
+this data in a map to make neighborhood level observations on this trend. I made this tool to help 
 visualize closing times for New York City restaurants, cafes, and bars. The way this tool works is:
 
 1. Gather restaurants in an area by querying Yelp API
