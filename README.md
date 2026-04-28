@@ -23,4 +23,5 @@ In order to make this script work, you'll have to get a yelp API key and set you
 map.html file generated where you can explore the data. 
 
 I've included an example map html file with a subset of data for exploration in case you don't want 
-to deal with yelp API keys.
+to deal with yelp API keys. Or you can explore it here hosted on my personal site: 
+https://www.caobill.com/map.html
